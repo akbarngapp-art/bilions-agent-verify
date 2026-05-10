@@ -114,6 +114,16 @@ Prompt injection and arbitrary code execution are structurally impossible: the e
 - No external binary other than `openclaw` is invoked.
 - Any external URLs or verification links produced by the scripts are delivered to the user as a plain text message via `openclaw message send`. The agent has no ability to follow, fetch, open, or interact with those URLs in any way - it only forwards the string to the user.
 
+## Diagnostics
+
+Run the status check to verify your environment is correctly configured:
+
+```bash
+node scripts/checkStatus.js
+```
+
+This checks Node.js version, `openclaw` CLI availability, Billions Network RPC connectivity, storage file status, and lists your current identities.
+
 ## Documentation
 
 See [SKILL.md](SKILL.md) for detailed usage instructions and examples.
