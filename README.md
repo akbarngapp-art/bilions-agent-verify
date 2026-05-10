@@ -63,6 +63,7 @@ This skill enables AI agents to create, manage, link, prove and verify ownership
 - **Human-Agent Linking**: Link a human identity to an agent's DID through signed challenges
 - **Proof Generation**: Generate cryptographic proofs to authenticate as a specific identity
 - **Proof Verification**: Verify proofs to confirm identity ownership
+- **Challenge History**: View and filter stored challenge records for auditing and debugging
 
 ## Architecture
 

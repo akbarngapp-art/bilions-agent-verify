@@ -90,6 +90,27 @@ node scripts/generateChallenge.js --did did:iden3:billions:main:2VmAk...
 
 ---
 
+### listChallenges.js
+
+**Command**: `node scripts/listChallenges.js [--did <did>]`
+**Description**: Lists all stored challenges with their associated DIDs and creation timestamps. Optionally filter by a specific DID. Useful for reviewing challenge history and debugging verification flows.
+**Arguments**:
+
+- `--did` - (optional) Filter challenges by a specific DID
+
+**Usage Examples**:
+
+```bash
+# List all challenges
+node scripts/listChallenges.js
+# List challenges for a specific DID
+node scripts/listChallenges.js --did did:iden3:billions:main:2VmAk...
+```
+
+**Output**: JSON array of challenge entries with DID, challenge value, creation timestamp, and whether the DID is the current default.
+
+---
+
 ### signChallenge.js
 
 **Command**: `node scripts/signChallenge.js --to <sender> --challenge <challenge> [--did <did>]`
