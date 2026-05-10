@@ -143,6 +143,20 @@ node scripts/verifySignature.js --did did:iden3:billions:main:2VmAk... --token e
 
 ---
 
+### checkStatus.js
+
+**Command**: `node scripts/checkStatus.js`
+**Description**: Runs a comprehensive health check of the identity environment. Verifies Node.js version, `openclaw` CLI availability, Billions Network RPC connectivity, storage file status, and lists current identities. Useful for debugging and onboarding.
+**Usage Example**:
+
+```bash
+node scripts/checkStatus.js
+```
+
+**Output**: Pass/fail status for each check, storage file summary, and identity listing.
+
+---
+
 ## Restrictions / Guardrails (CRITICAL)
 
 **CRITICAL - Always Follow These Rules:**
